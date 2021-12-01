@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <!-- <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" /> -->
+</head>
+
+<body>
+
+    
+    
+        <nav class="nav">
+            <div class = "btn-nav" onclick = "toggleClick()"></div>
+            
+            <ul>
+                <!-- <div class = "btn-nav"><img src = "pics/menu.jpg" alt = "menu" ></div> -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact-info">Contact Info</a></li>
+                <li><a href="code.html" style = "background-color:blue; color:aqua;">CODE</a></li>
+                <li><a onclick = "aboutClick()" id = "nav-about">About</a></li>
+    
+            </ul>
+    
+            <p>Data Science---Urban Planning</p>
+        </nav>
+        <div id = "about" class = "about">
+            <img src = "pics/me.jpg" alt = "me">
+            <p>Name: <strong>Syed Hussain</strong><br>
+                GitHub: Syedhussain894 <br>
+                LinkedIn: <a href = "https://www.linkedin.com/in/syed-hussain-427700213/" style = "color:aqua;"> Click Here</a>
+                <br><br></p>
+
+        </div>
+    
+    <div id = "wrapper">
+
+        <div style = "background-color:rgb(10, 12, 151);">
+            <br><br>
+        <br><br>
+            <h1 id = "home">Crash Reducer Evaluation</h1>
+        </div>
+
+        <div class = "seperation-div"></div>
+
+        <div style = "background-color:rgb(112, 4, 201);">
+            
+            <h2 style = "color:rgb(157, 255, 0);">Abstract</h2>
+            <p style = "color:rgb(157, 255, 0);"> The speed reducers are an effective way to prevent car crashes 
+                and I want to research on whether the amount of speed reducers 
+                in each borough effects the amount of car crashes. I will use 
+                various methods and equations to find average car crashes and 
+                number of car crashes in relation to number of speed reducers 
+                in every borough. This is a problem because speed reducers are 
+                a major way to stop crashes from happening, and the data for 
+                this project can help evaluate the possibility whether, having 
+                more speed reducers effects crash rate.</p>
+
+        </div>
+
+        <div class = "seperation-div"></div>
+
+        <div style = "background-color:rgb(56, 129, 123); color:yellow;">
+
+            <h2>Datasets</h2>
+            <p>Both data sets are related to NYC</p>
+            <br><br>
+
+            <h3>Motor Vehicle Collisions</h3>
+            <img src = "pics/crashdata.JPG" alt = "crashdata" width = "1000px">
+
+            <h3>Speed Reducers</h3>
+            <img src = "pics/reducerdata.JPG" alt = "reducerdata" width = "1000px">
+            <br><br>
+
+        </div>
+
+        <div class = "seperation-div"></div>
+
+        <div style = "background-color:black;">
+
+            <h2 style = "color:white;">------What is being Analyzed?, Goal-------</h2>
+            <br><br>
+
+            <p style = "color:white;"> The Goal of this project is to make different types of analysis, in order
+            to better understand the relation between car crashes and amount of speed reducers.<br><br>
+                Some of these Analysis can be:
+                <br><br><br>
+
+        File 1: Counts and Percentage based on Borough (created using Join of both Data sets)
+        Distinct Borough Name, count of car crashes per borough, count of speed reducers per borough, a percentage of totalcrash/totalreducer.<br><br>
+
+        File 2: Counts and Percentage Based on Street (created using Join of both Data sets)
+        Distinct Borough Name, Street Name, count of car crashes per street, count of speed reducers per street, a percentage of totalcrash/totalreducer.<br><br>
+
+        File 2 extended: Displays ALL the streets that need more reducers because of above average crash rate, done by first calcuating the mean 
+        crash total and then comparing with each street <br><br>
+
+        File 2 extended: Displays ALL the streets that dont need more reducers because of below average crash rate, done by first calcuating the mean 
+        crash total and then comparing with each street <br><br>
+
+        File 3: This File displays the streetName, Lat and Lon of all the reducers that have caused accidents, analyzed through checking all the 
+        latitute and longitute of reducers and car crashes that match <br><br>
+
+    
+    </p>
+        
+        </div>
+        <div class = "seperation-div"></div>
+
+        <div style = "background-color:white;">
+            <h2>File 1 Data: Eval By Borough</h2>
+
+            <img src = "pics/boroughdata.JPG" class = "imgdata1" alt = "boroughdata">
+            <p style = "text-align:right;">
+                <br><br>
+                This File displays: <br><br>
+                1) The Borough Names for each street <br><br>
+                2) All the Street Names from each borough <br><br>
+                3) The number of crashes per street <br><br>
+                4) The number of reducers per street <br><br>
+                5) The ratio of crashes/reducers <br><br>
+
+
+                <br><br>
+                There was not much pattern seen, in whether number of crashes per borough is affected by the number of reducers in that borough<br><br>
+                However, it was noticed that, Manhattan has the highest crash/reducer ratio out of all the boroughs
+                
+            </p>
+            
+        </div>
+
+        <div class = "seperation-div"></div>
+
+        <div style = "background-color:white;">
+            <h2>File 2 Data: Eval By Street</h2>
+
+            <img src = "pics/streetdata.JPG" class = "imgdata2" alt = "streetdata">
+            <p>
+                <br><br>
+                This File displays: <br><br>
+                1) All the Distinct Borough Names <br><br>
+                2) The number of crashes per borough <br><br>
+                3) The number of reducers per borough <br><br>
+                4) The ratio of crashes/reducers <br><br>
+
+                <br><br>
+                <br><br>
+                There was a partial pattern noticed in the borough of Manhattan as observed in the previous File, the ratio was the largest.<br><br>
+                The streets in Manhattan with the least reducers have a large amount of crashes.
+                <br><br><br>
+                As will be seen in the next outcomes, the mean rash/recuder ratio, will help analyze the street crashes further.
+            </p>
+            
+        </div>
+
+        <div class = "seperation-div"></div>
+
+        <div style = "background-color:white;">
+            <h2>Needed Speed Reducers</h2>
+
+            <img src = "pics/reducereval1.JPG" alt = "needreducer">
+            <p><br><br> This displays all the streets that need more reducers due to their ratio being above the average ratio.
+            This is evaluated by the comparison of the average ratio with each street in the dataframe and selecting
+            all the streets that have an above average ratio. </p>
+
+            <br><br><br>
+
+            <h2>Successfull amount of Speed Reducers</h2>
+
+            <img src = "pics/reducereval2.JPG" alt = "notneedreducer">
+            <p><br><br> This displays all the streets that dont need more reducers due to their ratio being below the average ratio.
+            This is evaluated by the comparison of the average ratio with each street in the dataframe and selecting
+            all the streets that have a below average ratio. </p>
+
+            <br><br><br>
+
+
+        </div>
+
+        <div class = "seperation-div"></div>
+
+        <div style = "background-color:rgb(124, 7, 7); color:aqua;">
+
+            <h2>Reducers Causing Accidents???</h2>
+
+            <img src = "pics/latlon.JPG" alt = "latlon">
+            <p><br> This evaluation allows us to see the latitude and longitude of all the reducers
+            and crashes that are viewed thorugh a join statement. This helps us to see which crashes occurerd in the places that 
+            have reducers, allowing us to understand that, the crash could have been caused by the reducer. This can further help us to understand whether
+            the reducer is necessary in that certain position</p><br><br>
+
+        </div>
+        
+        <div id = "contact-info" style = "background-color:rgb(122, 121, 121); color:rgb(189, 185, 185);">
+            <h2>Contact Info</h2>
+            <p>Email: smth7700@gmail.com<br><br>
+                Phone: 347-274-5456 <br><br>
+                (preferred text)
+            </p>
+        </div>
+        <footer>
+            <caption>
+                <strong><p>&copy; 2021 Syed T Hussain</p></strong>
+            </caption>
+        </footer>
+
+
+        
+
+    </div>
+
+</body>
