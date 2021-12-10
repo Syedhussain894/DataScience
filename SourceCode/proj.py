@@ -148,7 +148,9 @@ def file_3():
 # File 3 End ----------------------------------------
 
 
-# Running Programs, it is advised to run one by one due to the data being very large
+# Running Programs, it is advised to run the functions one by one (as listed below) 
+# due to the datasets being very large
+# Otherwise the program might stop, or crash
 
 # Run Alone
 file_1()
