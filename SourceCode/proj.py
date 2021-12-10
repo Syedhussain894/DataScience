@@ -136,7 +136,7 @@ print(file_3of22)
 
 # This File displays the streetName, Lat and Lon of all the reducers that have caused accidents
 
-# Ths query selects all locations exactly, where there are reducers and hace crashes in order to see which reducers are successful or unsuccessful
+# Ths query selects all locations exactly, where there are reducers and have crashes in order to see which reducers are successful or unsuccessful
 file_3_Query = 'SELECT c.BOROUGH, [ON STREET NAME], LATITUDE, LONGITUDE FROM file c INNER JOIN file2 r WHERE r.FromLatitude = c.LATITUDE AND r.FromLongitude = c.LONGITUDE GROUP BY [ON STREET NAME]'
 file_3 = psql.sqldf(file_3_Query)
 
