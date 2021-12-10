@@ -22,36 +22,34 @@
                 <!-- <div class = "btn-nav"><img src = "pics/menu.jpg" alt = "menu" ></div> -->
                 <li><a href="#home">Home</a></li>
                 <li><a href="#contact-info">Contact Info</a></li>
-                <li><a href="code.html" style = "background-color:blue; color:aqua;">CODE</a></li>
-                <li><a onclick = "aboutClick()" id = "nav-about">About</a></li>
     
             </ul>
     
-            <p>Data Science---Urban Planning</p>
+            <p>Crash Reducer Evaluation</p>
         </nav>
         <div id = "about" class = "about">
             <img src = "pics/me.jpg" alt = "me">
-            <p>Name: <strong>Syed Hussain</strong><br>
-                GitHub: Syedhussain894 <br>
-                LinkedIn: <a href = "https://www.linkedin.com/in/syed-hussain-427700213/" style = "color:aqua;"> Click Here</a>
-                <br><br></p>
+            
 
         </div>
     
     <div id = "wrapper">
 
-        <div style = "background-color:rgb(10, 12, 151);">
+        <div class = 'home' style = "background-color:#258EA6;">
             <br><br>
         <br><br>
             <h1 id = "home">Crash Reducer Evaluation</h1>
+
+            <img src = "pics/crash.JPG" alt = "crash" height = "300px">
+            <img src = "pics/reducer.JPG" alt = "reducer" height = "300px">
         </div>
 
         <div class = "seperation-div"></div>
 
-        <div style = "background-color:rgb(112, 4, 201);">
+        <div style = "background-color:#549F93; color:white;">
             
-            <h2 style = "color:rgb(157, 255, 0);">Abstract</h2>
-            <p style = "color:rgb(157, 255, 0);"> The speed reducers are an effective way to prevent car crashes 
+            <h2>Abstract</h2>
+            <p> The speed reducers are an effective way to prevent car crashes 
                 and I want to research on whether the amount of speed reducers 
                 in each borough effects the amount of car crashes. I will use 
                 various methods and equations to find average car crashes and 
@@ -59,35 +57,87 @@
                 in every borough. This is a problem because speed reducers are 
                 a major way to stop crashes from happening, and the data for 
                 this project can help evaluate the possibility whether, having 
-                more speed reducers effects crash rate.</p>
+                more speed reducers effects crash rate.
+            
+                <br><br><br><br>
+                The Themes for this project revolve around: <br><br>
+                <ol>
+                    <li>Trasportation</li>
+                    <li>Health</li>
+                    <li>Urban</li>
+                </ol>
+            
+            </p>
+
+
 
         </div>
 
-        <div class = "seperation-div"></div>
+        <!-- <div class = "seperation-div"></div> -->
 
-        <div style = "background-color:rgb(56, 129, 123); color:yellow;">
+        <div style = "background-color:#9FAF90; color:white;">
 
-            <h2>Datasets</h2>
-            <p>Both data sets are related to NYC</p>
+            <h2 style = "font-size:40px;">Datasets</h2>
+            <p>Both data sets are related provide real information about NYC.</p>
             <br><br>
 
-            <h3>Motor Vehicle Collisions</h3>
-            <img src = "pics/crashdata.JPG" alt = "crashdata" width = "1000px">
+            <h3 style = "font-size:30px;">Motor Vehicle Collisions</h3>
+            <img src = "pics/crashdata.JPG" alt = "crashdata" width = "800px">
+            <p>This Dataset contains all the accidents that have happened in NYC (every borough)</p>
+            <p>There are many attributes, but the ones that were the main focus include:
 
-            <h3>Speed Reducers</h3>
-            <img src = "pics/reducerdata.JPG" alt = "reducerdata" width = "1000px">
+                <ul>
+                    <li>Borough</li>
+                    <li>Crashes</li>
+                    <li>Latitude</li>
+                    <li>longitude</li>
+                    <li>Street Names</li>
+                </ul>
+
+            </p>
+    
+
+            <h3 style = "font-size:30px;">Speed Reducers</h3>
+            <img src = "pics/reducerdata.JPG" alt = "reducerdata" width = "800px">
+            <p>This Dataset contains the locations of all the speed reducers in NYC (every borough)</p>
+            <p>There are many attributes, but the ones that were the main focus include:
+
+                <ul>
+                    <li>Borough</li>
+                    <li>Latitude</li>
+                    <li>longitude</li>
+                    <li>Street Names</li>
+                </ul>
+
+            </p>
             <br><br>
 
         </div>
 
-        <div class = "seperation-div"></div>
+        <div style = "background-color:#6CBEED; color:black;">
+        
+            <h2>Techniques Used</h2>
+            <br>
+            <p>Python:</p>
+            <ul>
+                <li>Pandas</li>
+                <li>PandaSQL</li>
+                <li>MatPlotlib.pyplot</li>
+            </ul><br><br>
+            <p>For This project, the python libraries pandas and pandasql were used in order to extract certain data from the datasets<br>
+            and to perform queries in order to clean the data for better analysis.<br>
+        For visualizations the library MatPlotlib was used. Due to this it was easier to display the analysis made.</p>
+        
+        </div>
 
-        <div style = "background-color:black;">
+        <!-- <div class = "seperation-div"></div> -->
 
-            <h2 style = "color:white;">------What is being Analyzed?, Goal-------</h2>
+        <div style = "background-color:#E2B1B1;">
+
+            <h2 style = "color:black;">------What is being Analyzed?, Goal-------</h2>
             <br><br>
 
-            <p style = "color:white;"> The Goal of this project is to make different types of analysis, in order
+            <p style = "color:black;"> The Goal of this project is to make different types of analysis, in order
             to better understand the relation between car crashes and amount of speed reducers.<br><br>
                 Some of these Analysis can be:
                 <br><br><br>
@@ -111,9 +161,9 @@
     </p>
         
         </div>
-        <div class = "seperation-div"></div>
+        <!-- <div class = "seperation-div"></div> -->
 
-        <div style = "background-color:white;">
+        <div style = "background-color:#E2C2FF;">
             <h2>File 1 Data: Eval By Borough</h2>
 
             <img src = "pics/boroughdata.JPG" class = "imgdata1" alt = "boroughdata">
@@ -126,6 +176,8 @@
                 4) The number of reducers per street <br><br>
                 5) The ratio of crashes/reducers <br><br>
 
+                For the analysis of this data, both datsets were joined using the borough so that a correct count <br>
+                of crashes and reducers can be calculated by borough.
 
                 <br><br>
                 There was not much pattern seen, in whether number of crashes per borough is affected by the number of reducers in that borough<br><br>
@@ -135,9 +187,27 @@
             
         </div>
 
+        <div style = "background-color:#E2856E; color:white;">
+            <h2> Visualization of the data represented above</h2>
+
+            <img src = "pics/PlotFile1.JPG" alr = "data" height = 300px><br><br>
+            <p>This visualization shows the crash/reducer ratio as a bar graph.<br>
+            This can allow us to better picture the relationship between the amount of crashes per borough and the <br> amount
+        of reducers per borough.<br><br>
+    As we can see, Manhattan displays the highest ratio, therefore it can be concluded that manhattan needs more reducers.</p><br><br><br>
+
+
+            <img src = "pics/PlotFile1-2.JPG" alr = "data" height = 300px>
+            <p>This visualization further allows us to see the amount of crashes in comparison to the amount of speed reducers 
+                <br> per borough. Overall, Brooklyn has the highest amount of crashes and Staten Island has the least.
+            </p>
+
+
+        </div>
+
         <div class = "seperation-div"></div>
 
-        <div style = "background-color:white;">
+        <div style = "background-color:#FFB100; color:black;">
             <h2>File 2 Data: Eval By Street</h2>
 
             <img src = "pics/streetdata.JPG" class = "imgdata2" alt = "streetdata">
@@ -150,6 +220,8 @@
                 4) The ratio of crashes/reducers <br><br>
 
                 <br><br>
+                This data was analyzed through the joining of both datasets with street names as the main key. This <br> allowed fo the display of crashes
+                and reducer ratio per street, to go further into detail apart from just analyzing per borough.
                 <br><br>
                 There was a partial pattern noticed in the borough of Manhattan as observed in the previous File, the ratio was the largest.<br><br>
                 The streets in Manhattan with the least reducers have a large amount of crashes.
@@ -159,15 +231,18 @@
             
         </div>
 
-        <div class = "seperation-div"></div>
+        <!-- <div class = "seperation-div"></div> -->
 
-        <div style = "background-color:white;">
+        <div style = "background-color:#FFB100; color:black;">
             <h2>Needed Speed Reducers</h2>
 
             <img src = "pics/reducereval1.JPG" alt = "needreducer">
             <p><br><br> This displays all the streets that need more reducers due to their ratio being above the average ratio.
             This is evaluated by the comparison of the average ratio with each street in the dataframe and selecting
             all the streets that have an above average ratio. </p>
+
+            <br><p>This was analyzed by using the previous data of street analysis and comparing the mean ratio with the<br>
+             street specific ratio.</p>
 
             <br><br><br>
 
@@ -178,6 +253,9 @@
             This is evaluated by the comparison of the average ratio with each street in the dataframe and selecting
             all the streets that have a below average ratio. </p>
 
+            <br><p>This was analyzed by using the previous data of street analysis and comparing the mean ratio with the<br>
+                street specific ratio.</p>
+
             <br><br><br>
 
 
@@ -185,7 +263,7 @@
 
         <div class = "seperation-div"></div>
 
-        <div style = "background-color:rgb(124, 7, 7); color:aqua;">
+        <div style = "background-color:#A9E5BB; color:black;">
 
             <h2>Reducers Causing Accidents???</h2>
 
@@ -195,18 +273,27 @@
             have reducers, allowing us to understand that, the crash could have been caused by the reducer. This can further help us to understand whether
             the reducer is necessary in that certain position</p><br><br>
 
+            <p>This was analyzed through the joining of both tables with the street names and <br>
+            the longitude/latitude as the keys.<br><br>
+        This analysis is critical in that, it can help to better understand whether there are reducers needed in certain cituation, such as a busy street
+    <br> in a specific location or a non-busy street (which attracts speeders).</p>
+
+
         </div>
         
         <div id = "contact-info" style = "background-color:rgb(122, 121, 121); color:rgb(189, 185, 185);">
             <h2>Contact Info</h2>
-            <p>Email: smth7700@gmail.com<br><br>
-                Phone: 347-274-5456 <br><br>
-                (preferred text)
-            </p>
+            <p>Name: <strong>Syed Hussain</strong><br>
+                GitHub: <a href = "https://github.com/Syedhussain894/" style = "color:aqua;" target = "_blank">Syedhussain894 </a><br>
+                Emplid ID: 23514894 <br>
+                LinkedIn: <a href = "https://www.linkedin.com/in/syed-hussain-427700213/" style = "color:aqua;" target = "_blank"> Click Here</a><br><br>
+                Dataset Sources: <a href = "https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95" style = "color: aqua;" target = "_blank">Motor Vehicle Crashes</a> and <a href = "https://data.cityofnewyork.us/Transportation/Speed-Reducer-Tracking-System-SRTS-/9n6h-pt9g" style = "color: aqua" target = "_blank">Speed Reducers</a>
+
+                <br><br></p>
         </div>
         <footer>
             <caption>
-                <strong><p>&copy; 2021 Syed T Hussain</p></strong>
+                <strong><p>&copy; 2021 Syed Hussain</p></strong>
             </caption>
         </footer>
 
