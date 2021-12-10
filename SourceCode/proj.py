@@ -45,16 +45,24 @@ def file_1():
     file_1.to_csv('file1.csv', index = False)
 
 
-    # display above data
+    # Creates Dataframe of above data
     df = pd.DataFrame({'#Crashes': file_1['CrashCount'],
                     '#Reducers': file_1['ReducerCount'], 'Borough': file_1['BOROUGH']})
 
+    # creates multi bar graph of crashes and reducers
     df.plot(x="Borough", y=["#Crashes", "#Reducers"], kind="bar", stacked=True)
     plt.show()
 
+    # Creates bar graph of crash/reducer ratio
     plt.bar(file_1['BOROUGH'],file_1['Crash/Reducer Ratio'])
     plt.xlabel('Borough')
     plt.ylabel('Ratio')
+    plt.show()
+
+    # creates pie plots of crashes and reducers
+    df.groupby(['Borough']).mean().plot(kind='pie', y='#Crashes')
+    plt.show()
+    df.groupby(['Borough']).mean().plot(kind='pie', y='#Reducers')
     plt.show()
 
 
