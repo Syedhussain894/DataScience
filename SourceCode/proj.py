@@ -5,6 +5,7 @@
 
 # The DataSet files were too large to submit to github, therefore, 
 # it is advised that in order to test the code, download the datasets from the website link before testing
+# Do not run all functions at once. Due to large amount of data, the program might crash, run functions one by one(as listed at the end).
 
 
 # Import panda, matplot and pandadsql
