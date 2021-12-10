@@ -1,0 +1,10 @@
+Name: Syed Hussain
+Email: syed.hussain894@myhunter.cuny.edu
+Resources: Speed Reducer Data-- https://data.cityofnewyork.us/Transportation/Speed-Reducer-Tracking-System-SRTS-/9n6h-pt9g ------ Motor Vehicle Collision data -- https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95
+Title: Crash Reducer Evaluation
+Theme: Transport, Health, Urban
+Abstract: My approach for this project is to make an analysis of relation between crashes and speed reducers in NYC. I am doing this by joining both datasets in order to filter data and display it. This data will help in analyzing the relations.
+Relevance to NYC: This is related to NYC because  it focus on all the crashes and speed reducers in all the 5 boroughs.
+URL: https://syedhussain894.github.io/DataScience/
+GitHub: Syedhussain894
+LinkedIn: https://www.linkedin.com/in/syed-hussain-427700213/
